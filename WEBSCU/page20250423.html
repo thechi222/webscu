@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20250423課堂作業</title>
+    <style>
+        h1 {
+            text-align: center;
+            background-color: darkkhaki;
+            transition-property: background-color;
+            transition-duration: 3s;
+            transition-delay: 2s;
+            opacity: 0.5;
+            height: 100px;
+            width: 450px
+        }
+
+        h1:hover {
+            background-color: chartreuse;
+            color: red;
+            opacity: 0.8;
+            height: 300px;
+            width: 500px;
+        }
+
+        p {
+            text-align: center;
+            font-size: 20px;
+            color: red;
+            transition-property: color, background-color, font-size;
+            transition-duration: 3s;
+            background-color: burlywood;
+        }
+
+        p:hover {
+            color: brown;
+            background-color: yellow;
+            font-size: 40px;
+        }
+
+        a {
+            background-color: chocolate;
+            color: aquamarine;
+            font-size: 20px;
+            text-align: center;
+            transition-property: text-align, font-size, color, background-color;
+            transition-duration: 10s;
+            transition-timing-function: steps(10);
+        }
+
+        a:hover {
+            font-size: 40px;
+            text-align: right;
+            color: beige;
+            background-color: darkmagenta;
+        }
+
+        input[type=text]:focus {
+            width: 450px;
+            background-color: deeppink;
+        }
+
+        @keyframes my-animation {
+            0% {
+                left: 0px;
+                top: 0px
+            }
+
+            10% {
+                left: 50px;
+                top: 50px
+            }
+
+            20% {
+                left: 100px;
+                top: 100px
+            }
+
+            30% {
+                left: 150px;
+                top: 150px
+            }
+
+            40% {
+                left: 200px;
+                top: 200px
+            }
+
+            50% {
+                left: 250px;
+                top: 250px
+            }
+
+            60% {
+                left: 300px;
+                top: 200px
+            }
+
+            70% {
+                left: 350px;
+                top: 150px
+            }
+
+            80% {
+                left: 400px;
+                top: 100px
+            }
+
+            90% {
+                left: 450px;
+                top: 50px
+            }
+
+            100% {
+                left: 500px;
+                top: 0px
+            }
+
+        }
+
+        @keyframes you-animation {
+            0% {
+                left: 0px;
+            }
+
+            25% {
+                left: 50px;
+
+            }
+
+            50% {
+                left: 100px;
+            }
+
+
+            75% {
+                left: 150px;
+            }
+
+            100% {
+                left: 200px;
+            }
+        
+        }
+        @keyframes we-animation{
+            from{left:0px}
+            to{left:350px} 
+        }
+   
+        #route1{animation-timing-function: ease;color:darkviolet;}
+        #route2{animation-timing-function: ease-in;color: darkgreen;}
+        #route3{animation-timing-function: ease-out;color: goldenrod;}
+        #route4{animation-timing-function: ease-in-out;color: darkred;}
+        #route5{animation-timing-function: linear;color: lightcoral;}
+        @keyframes color-animation{
+            0%{color: darkslateblue;}
+           20%{color: rgb(139, 139, 61);}
+           40%{color: rgb(61, 139, 101);}
+           60%{color: rgb(250, 57, 22);}
+           80%{color: rgb(139, 135, 61);}
+          100%{color: rgb(139, 61, 65);}
+
+}
+
+        @keyframes slide {
+    from {
+        left: 0px;
+    }
+    to {
+        left: 400px;
+    }
+}
+#route1, #route2, #route3, #route4, #route5 {
+    position: relative;
+    animation-name: slide;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+
+
+        .box1 {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            animation-name: we-animation;
+            animation-duration: 6s;
+            /*animation-iteration-count:infinite ;*/
+            animation-iteration-count: 3;
+            animation-direction: alternate;
+
+        }
+        .box2 {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            animation-name: you-animation;
+            animation-duration: 8s;
+            /*animation-iteration-count:infinite ;*/
+            animation-iteration-count: 5;
+            animation-direction: alternate;
+
+        }
+
+
+        body {
+            margin: 0%
+        }
+
+        h2 {
+            width: 300px;
+            height: 50px;
+            color: dodgerblue;
+            background-color: lightslategrey;
+            position: absolute;
+            animation-name: my-animation;
+            animation-duration: 5s;
+            left: 0px;         /* 新增這行 */
+            top: 0px;          /* 新增這行 */
+        }
+        h3{
+            color:brown;
+            animation-name: color-animation;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+    </style>
+
+
+
+
+
+</head>
+
+<body>
+    <h1 style="opacity: 1;background-color: aliceblue;">20250423課堂練習</h2>
+    <h2>HTML5+CSS3+JavaScript</h2>
+    <br>
+    <h1>HTML5+CSS3+JavaScript</h1>
+    <p>HTML5+CSS3+JavaScript</p>
+    <a href="#">超連結</a>
+    <hr>
+    <p>Input data:<input type="text" name=" input-data"></p>
+    <hr>
+    <div class="box1">
+        <img src="cow.jpg" width="100" height="100">
+
+    </div>
+    <div class="box2">
+        <img src="goose.jpg" width="100" height="100">
+
+    </div>
+    <hr>
+    <br> 
+    <br> 
+    <br> 
+    <br> <br>
+    <h3>animation-timing-function</h3>
+    <div id="route1">ease</div><br>
+    <div id="route2">ease-in</div><br>
+    <div id="route3">ease-out</div><br>
+    <div id="route4">ease-in-out</div><br>
+    <div id="route5">linear</div><br>
+    
+</body>
+
+</html>

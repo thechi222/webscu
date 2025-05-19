@@ -1,0 +1,12 @@
+
+
+@media screen and (max-width:680px) {
+    body {
+        background-color: rgb(59, 131, 131);
+    }
+
+    p {
+        font-size: small;
+        font-family: Arial,Helvetica,sans-serif;
+    }
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20250507課堂練習</title>
+    <script src="test.js">
+
+    </script>
+    <script>
+        //單行註解(這兩個是javascript的註解)
+        /*
+           多行註解
+        */
+        //alert("Hello 雙周班");
+        document.write('Hello JavaScript')
+    </script>
+    <noscript>本網頁需要JavaScript</noscript>
+</head>
+
+<body>
+    <h1 style="text-align: center;">20250507課堂練習</h1>
+    <p onclick="alert('呼叫onclick');">onclick測試</p>
+    <p onclick="alert('呼叫另一次onclick');">JavaScript基礎練習</p>
+    <hr>
+    <h2 id="text">Guess wuttttttttttttttttttt!!!!!!!!!!</h2>
+    <script>
+        document.write('<h3 id="t1">JavaScript Hello</h3>');
+    </script>
+    <!-- -->
+    <button onclick="showImage()" >botton22222222222</button>
+    <div id="output"></div>
+    <script>
+        function showImage() {
+            document.getElementById("output").innerHTML = "<img src='shack.jpg' alt='圖片'>";
+        }
+    </script>
+    <!-- -->
+    <style>
+        h3#t1 {
+            color: aquamarine
+        }
+    </style>
+    <button onclick="document.write('<p>nakadashi</p>');">按鈕</button>
+    <!-- -->
+    <pre>
+<script>
+    document.writeln("<h1>Toooooooooo Manyyyyyyyyyyyyyyy</h1>")
+    document.writeln("                       Happyyyyyyyyyyyyyyy Summmmmmmmmmmmmmmmmmmer")
+    document.writeln("       Wannnnnnnnnnnnna Hooooooooooooooooooooooooooop")
+</script>
+   </pre>
+    <hr>
+    <button onclick="myfunction()">變了</button>
+    <p id="text"></p>
+    <!-- -->
+    <hr>
+    <p>
+        書名:<input  type="text" id="book">
+        <button onclick="addbook();">新增資料</button>
+    </p>
+    <ul id="list"></ul>
+    <hr>
+    <hr>
+    <p id="ex1"></p>
+    <p id="ex2">stfu</p>   
+    <p><button onclick="randomtest();">產生亂數</button></p>
+    <hr>
+    <hr>
+    <p>
+        <button onclick="timefunction()">顯示時間</button>
+        <button onclick="weekfunction()">顯示星期</button>
+    </p>
+    <p id="hr"></p>
+    <p id="t"></p>
+    <p id="w"></p>
+</body>
+
+</html>

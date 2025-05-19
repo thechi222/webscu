@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20250430課堂練習</title>
+    <style>
+        @import url(newscreen.css);
+
+        ul {
+            list-style: none;
+            padding: 0px;
+        }
+
+        li {
+            padding-left: 10px;
+        }
+
+        li:before {
+            content: '@';
+            padding-right: 5px;
+            color: cadetblue;
+        }
+
+        span#crosshair {
+            cursor: crosshair;
+        }
+
+        span#help {
+            cursor: help;
+        }
+
+        span#e-resize {
+            cursor: e-resize;
+        }
+
+        p {
+            cursor: pointer;
+            background-color: bisque;
+        }
+
+        #test {
+            cursor: n-resize;
+        }
+
+        body {
+            background-color: rgb(207, 192, 181);
+        }
+    </style>
+
+    <script>
+        function testfn() {
+            document.getElementById('ex').innerHTML = 'JavaScript';
+        }
+    </script>
+
+    <link rel="stylesheet" media="screen" href="screenstyle.css">
+</head>
+
+<body>
+    <h1>20250430課堂練習</h1>
+    <h2 id="test">游標練習</h2>
+    <p>視窗寬度小於480px底色跟字大小將改變</p>
+
+    <button type="button" onclick="testfn()">OK</button>
+    <span id="ex"></span> 
+
+    <br><br>
+
+    <span id="crosshair">CROSSHAIR</span><br>
+    <span id="e-resize">E-RESIZE</span><br>
+    <span id="help">HELP</span>
+
+    <p>not allowed</p>
+
+    <ul>
+        <li>伺服器</li>
+        <li>網路設備</li>
+        <li>電腦</li>
+        <li>滑鼠</li>
+    </ul>
+</body>
+
+</html>
